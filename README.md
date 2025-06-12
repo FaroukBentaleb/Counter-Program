@@ -1,4 +1,4 @@
-# 🎯 Guess The Number Mini
+# 🎯 Guess The Number Mini Game
 
 Try your luck (and logic) in this fun and challenging number guessing game!
 
