@@ -7,6 +7,7 @@ A collection of mini projects built using JavaScript to practice and demonstrate
 
 - 🔢 Counter App
 - 🎲 Roller Game
+- 🧠 Number Guessing
 - 📅 More projects coming soon...
 
 ## 🚀 Getting Started
