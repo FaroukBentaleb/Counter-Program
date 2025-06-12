@@ -1,17 +1,34 @@
-# Javascript-Mini-Projects
+# 🎲 Roller Game
 
-A collection of mini projects built using JavaScript to practice and demonstrate core web development concepts.
+A simple and fun mini project built with JavaScript.  
+Press the **"Try Me"** button — if all three numbers match, you win! Otherwise, you fail. 🎰
 
-![Sample Project](image.png)
+## 🖼 Screenshots
 
-## 🔧 Projects Included
+### ✅ Winning Example
 
-- ✅ Counter App
-- 📅 More projects coming soon...
+![Win](won.png)
 
-## 🚀 Getting Started
+### ❌ Failing Example
 
-1. Clone the repository:
+![Fail](failed.png)
+
+## 🚀 How It Works
+
+- Click the **"Try Me"** button.
+- Three random numbers (0–10) will be generated.
+- If **all three numbers are the same**, you **win** 🎉.
+- Otherwise, you **fail** ❌.
+
+## 🧠 Tech Stack
+
+- HTML
+- CSS
+- JavaScript
+
+## ▶️ How to Run
+
+1. Clone the repo:
    ```bash
-   git clone https://github.com/FaroukBentaleb/Javascript-Mini-Projects
+   git clone https://github.com/FaroukBentaleb/Javascript-Mini-Projects.git
    ```
