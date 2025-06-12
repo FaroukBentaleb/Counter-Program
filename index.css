@@ -1,9 +1,7 @@
-#Guess-btn {background-color: #008CBA;}
-.headings{
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
+#Guess-btn {background-color: #4872de;}
+#Hint-btn1, #Hint-btn2, #Hint-btn3 {background-color: #555555;}
+
+#PlayAgain-btn {background-color: #7d8086;}
 button{
   border: none;
   color: white;
@@ -15,6 +13,9 @@ button{
 }
 h1 {
   text-align: center;
+}
+.container{
+ text-align: center;
 }
 .btn-section{
  text-align: center;

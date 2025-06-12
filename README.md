@@ -1,34 +1,52 @@
-# 🎲 Roller Game
+# 🎯 Guess The Number Mini
 
-A simple and fun mini project built with JavaScript.  
-Press the **"Try Me"** button — if all three numbers match, you win! Otherwise, you fail. 🎰
+Try your luck (and logic) in this fun and challenging number guessing game!
 
-## 🖼 Screenshots
+## 🔗 Live Demo
 
-### ✅ Winning Example
+👉 [Play Now](https://guessthenumbermini.netlify.app)
 
-![Win](won.png)
+## 🕹️ How to Play
 
-### ❌ Failing Example
+1. **Choose a Difficulty Level**
 
-![Fail](failed.png)
+   - Easy, Medium, or Hard — each level defines a different number range.
 
-## 🚀 How It Works
+2. **Start Guessing**
 
-- Click the **"Try Me"** button.
-- Three random numbers (0–10) will be generated.
-- If **all three numbers are the same**, you **win** 🎉.
-- Otherwise, you **fail** ❌.
+   - You have **7 attempts** to find the correct number.
 
-## 🧠 Tech Stack
+3. **Hints Available**
+
+   - You get **3 hints** to help narrow down your choices.
+
+4. **Feedback After Each Guess**
+   - The game will tell you whether your number is **too high** or **too low** compared to the correct answer.
+
+## 🎮 Features
+
+- Difficulty-based number range
+- Clear feedback on each guess
+- Max 7 trials per game
+- 3 hints per round
+- Simple, responsive interface
+- Fully playable in the browser
+
+## 💡 Example
+
+If you choose **Medium**, the target number might be between 1 and 50.
+
+- You guess 35 → "Too high!"
+- You guess 20 → "Too low!"  
+  Keep narrowing it down using logic and hints!
+
+## 🛠️ Tech Stack
 
 - HTML
 - CSS
 - JavaScript
+- Deployed with [Netlify](https://netlify.com)
 
-## ▶️ How to Run
+---
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/FaroukBentaleb/Javascript-Mini-Projects.git
-   ```
+Made for fun and learning.
