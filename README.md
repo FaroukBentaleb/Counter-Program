@@ -2,7 +2,6 @@
 
 A collection of mini projects built using JavaScript to practice and demonstrate core web development concepts.
 
-![Sample Project](image.png)
 
 ## 🔧 Projects Included
 
