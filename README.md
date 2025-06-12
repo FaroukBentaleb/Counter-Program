@@ -5,7 +5,8 @@ A collection of mini projects built using JavaScript to practice and demonstrate
 
 ## 🔧 Projects Included
 
-- ✅ Counter App
+- Counter App
+- Roller Game
 - 📅 More projects coming soon...
 
 ## 🚀 Getting Started
