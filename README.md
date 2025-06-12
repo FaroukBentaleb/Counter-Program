@@ -1,4 +1,17 @@
-# Counter-Program
+# Javascript-Mini-Projects
 
-Just a mini project with Javascript
-![alt text](image.png)
+A collection of mini projects built using JavaScript to practice and demonstrate core web development concepts.
+
+![Sample Project](image.png)
+
+## 🔧 Projects Included
+
+- ✅ Counter App
+- 📅 More projects coming soon...
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/FaroukBentaleb/Javascript-Mini-Projects
+   ```
