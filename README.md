@@ -5,9 +5,11 @@ A collection of mini projects built using JavaScript to practice and demonstrate
 
 ## 🔧 Projects Included
 
-- 🔢 Counter App
-- 🎲 Roller Game
-- 🧠 Number Guessing
+- 🔢 Counter App 
+- 🎲 Dice Roller 
+- 🎰 Number Roller
+- 🌡️ Temperature Converter 
+- 🧠 Number Guessing Game 
 - 📅 More projects coming soon...
 
 ## 🚀 Getting Started
