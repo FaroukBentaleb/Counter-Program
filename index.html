@@ -3,28 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Projet 4</title>
+    <title>Mini Projet 5</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>    
-    <div class="container">
-        <div class="btn-section">    
-            <fieldset>
-                <legend>Type a Tempreture:</legend>
-                <br>
-                <input type="number" id="reponse">
-                <label for="reponse" id="label_rep"></label>
-                <div>
-                  <input type="radio" id="celsius" name="temp" value="celsius"/>
-                  <label for="celsius">Celsius ➔ Fahrenheit</label>
-                </div>
-                <div>
-                  <input type="radio" id="fah" name="temp" value="fah"/>
-                  <label for="fah">Fahrenheit ➔ Celsius</label>
-                </div>
-                <p id="result"></p>
-              </fieldset>
-            <br>
+<body>
+    <img id="imgw" src="img/white-mode.png" alt="" width="100px">
+    <img id="imgd" src="img/dark-mode.png" alt="" width="100px  ">
+    <div class="container" id="cont">
+        <div class="btn-section">
+          <legend class="legend" id="legend">Dice Roller:</legend>
+          <br>
+          <span id="span"># dice(s) </span> 
+          <input type="number" id="reponse">
+          <br>
+          <button id="roll" class="btn-dark">Roll Dice</button>
+
+          <p id="result"></p>
+          <br>
         </div>
     </div>    
     <script src="index.js"></script>

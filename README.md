@@ -1,48 +1,40 @@
-# 🌡️ Temperature Converter
+# 🎲 Dice Roller Game
 
-A simple web-based temperature converter that allows you to convert values between **Celsius and Fahrenheit** instantly as you type.
+A simple web-based Dice Roller game where users can enter the number of dice they want to roll, and get the results displayed as dice images. The app also includes light and dark mode toggle.
+
+🔗 **Live Demo**: [https://dice-rollergame.netlify.app/](https://dice-rollergame.netlify.app/)
 
 ---
 
-## 🔧 Features
+## ✨ Features
 
-- Convert Celsius ➔ Fahrenheit
-- Convert Fahrenheit ➔ Celsius
-- Live result updates as you type
-- Simple and user-friendly interface
+- 🎲 Roll 1 to many dice with a single click
+- 🌙 Supports **Dark Mode** and **Light Mode**
+- 📷 Displays random dice faces using clean SVG images
+- 🧮 Dynamic input for number of dice
+- ⚡ Instant results with no page reloads
 
 ---
 
 ## 🚀 How to Use
 
-1. **Type a temperature** in the input box.
-2. **Select a conversion mode**:
-   - ✅ Celsius ➔ Fahrenheit
-   - ✅ Fahrenheit ➔ Celsius
-3. View the converted result instantly!
+1. Visit the live site: [https://dice-rollergame.netlify.app/](https://dice-rollergame.netlify.app/)
+2. Enter the number of dice you want to roll in the input field (e.g., `2`)
+3. Click the **Roll Dice** button
+4. View the randomly generated dice images
 
-If no conversion mode is selected, the app will not display a result.
-
----
-
-## 📸 Screenshots
-
-### ✅ 1. Fahrenheit ➔ Celsius
-
-![Convert to Celsius](./img/to-celsius.png)
-
-### ✅ 2. Celsius ➔ Fahrenheit
-
-![Convert to Fahrenheit](./img/to-fahrenheit.png)
-
-### ⚠️ 3. No Option Selected
-
-![No option selected](./img/no-selection.png)
+You can also toggle between **Light Mode** and **Dark Mode** using the theme switch buttons at the top or bottom of the interface.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
 - HTML
-- CSS
-- JavaScript
+- CSS (custom styling for dark/light themes)
+- JavaScript (DOM manipulation and randomization logic)
+
+---
+
+## 📸 Screenshot
+
+![Dice Roller Game Screenshot](./img/image.png)

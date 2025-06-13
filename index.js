@@ -1,32 +1,67 @@
+let mode = "w";
+let dices = [];
+let btn = document.getElementById("roll");
+let cont = document.getElementById("cont");
+let legend = document.getElementById("legend");
+let span = document.getElementById("span");
+document.getElementById("imgd").style.display = "none";
 
-document.getElementById("reponse").oninput = function(){
-    trigger();
+//White Mode
+document.getElementById("imgw").onclick = function(){
+    document.getElementById("imgd").style.display = "block";
+    document.getElementById("imgw").style.display = "none";
+    btn.classList.add("btn-white");
+    btn.classList.remove("btn-dark");
+
+    cont.classList.add("container-dark");
+    cont.classList.remove("container");
+
+    legend.classList.add("legend-dark");
+    legend.classList.remove("legend");
+
+    span.classList.add("span-dark");
+    span.classList.remove("span");
+
+    mode = "d";
+    Prepare(dices);
 }
-document.getElementById("celsius").onchange = function(){
-    trigger();
+//Dark Mode
+document.getElementById("imgd").onclick = function(){
+    document.getElementById("imgw").style.display = "block";
+    document.getElementById("imgd").style.display = "none";
+    btn.classList.remove("btn-white");
+    btn.classList.add("btn-dark");
+
+    cont.classList.remove("container-dark");
+    cont.classList.add("container");
+
+    legend.classList.remove("legend-dark");
+    legend.classList.add("legend");
+
+    span.classList.remove("span-dark");
+    span.classList.add("span");
+    mode = "w";
+    Prepare(dices);
 }
-document.getElementById("fah").onchange = function(){
-    trigger();
-}
-function toCelsius(val){
-    return (val-32) * 5/9;
-}
-function toFahrn(val){
-    return (val * 9/5) + 32;
-}
-function trigger(){
-    let temp = document.getElementById("reponse").value;
-    if(document.getElementById("celsius").checked){
-        document.getElementById("label_rep").textContent = "°C";
-        document.getElementById("result").textContent = toFahrn(Number(temp)) + " °F";
+
+document.getElementById("roll").onclick = function(){
+    dices = [];
+    let dice = Number(document.getElementById("reponse").value);
+    for (let i=0; i<dice ; i++){
+        dices[i] = Math.floor(Math.random()*6)+1;
     }
-    else{
-        if(document.getElementById("fah").checked){
-            document.getElementById("label_rep").textContent = "°F";
-            document.getElementById("result").textContent = toCelsius(Number(temp)) + " °C";
+    Prepare(dices);
+}
+
+function Prepare(...dices){
+    let dice = Number(document.getElementById("reponse").value);
+    document.getElementById("result").textContent = "";
+    for (let i=0; i<dice ; i++){
+        if(mode === "d"){
+            document.getElementById("result").innerHTML += `<img src="img/`+ dices[0][i] +`.svg" alt="img/`+ dices[0][i] +`.svg" width="70px"style=" background-color: white;">`;
         }
         else{
-            document.getElementById("result").textContent = "Please select a Mode!!";
+            document.getElementById("result").innerHTML += `<img src="img/`+ dices[0][i] +`-dark.svg" alt="img/`+ dices[0][i] +`.svg" width="50px">`;
         }
     }
 }
