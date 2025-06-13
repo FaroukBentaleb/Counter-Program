@@ -1,22 +1,66 @@
-#Guess-btn {background-color: #4872de;}
-#Hint-btn1, #Hint-btn2, #Hint-btn3 {background-color: #555555;}
-
-#PlayAgain-btn {background-color: #7d8086;}
-button{
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
 }
+
+.container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
 h1 {
   text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
 }
-.container{
- text-align: center;
+
+fieldset {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
-.btn-section{
- text-align: center;
+
+legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+label {
+  font-size: 1rem;
+  margin-left: 8px;
+}
+
+.radio-group {
+  margin: 10px 0;
+  text-align: left;
+  padding-left: 20%;
+}
+
+#result {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0066cc;
+  margin-top: 20px;
+}
+
+input[type="number"] {
+  width: 200px;
+  max-width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
 }

@@ -1,52 +1,48 @@
-# 🎯 Guess The Number Mini
+# 🌡️ Temperature Converter
 
-Try your luck (and logic) in this fun and challenging number guessing game!
+A simple web-based temperature converter that allows you to convert values between **Celsius and Fahrenheit** instantly as you type.
 
-## 🔗 Live Demo
+---
 
-👉 [Play Now](https://guessthenumbermini.netlify.app)
+## 🔧 Features
 
-## 🕹️ How to Play
+- Convert Celsius ➔ Fahrenheit
+- Convert Fahrenheit ➔ Celsius
+- Live result updates as you type
+- Simple and user-friendly interface
 
-1. **Choose a Difficulty Level**
+---
 
-   - Easy, Medium, or Hard — each level defines a different number range.
+## 🚀 How to Use
 
-2. **Start Guessing**
+1. **Type a temperature** in the input box.
+2. **Select a conversion mode**:
+   - ✅ Celsius ➔ Fahrenheit
+   - ✅ Fahrenheit ➔ Celsius
+3. View the converted result instantly!
 
-   - You have **7 attempts** to find the correct number.
+If no conversion mode is selected, the app will not display a result.
 
-3. **Hints Available**
+---
 
-   - You get **3 hints** to help narrow down your choices.
+## 📸 Screenshots
 
-4. **Feedback After Each Guess**
-   - The game will tell you whether your number is **too high** or **too low** compared to the correct answer.
+### ✅ 1. Fahrenheit ➔ Celsius
 
-## 🎮 Features
+![Convert to Celsius](./img/to-celsius.png)
 
-- Difficulty-based number range
-- Clear feedback on each guess
-- Max 7 trials per game
-- 3 hints per round
-- Simple, responsive interface
-- Fully playable in the browser
+### ✅ 2. Celsius ➔ Fahrenheit
 
-## 💡 Example
+![Convert to Fahrenheit](./img/to-fahrenheit.png)
 
-If you choose **Medium**, the target number might be between 1 and 50.
+### ⚠️ 3. No Option Selected
 
-- You guess 35 → "Too high!"
-- You guess 20 → "Too low!"  
-  Keep narrowing it down using logic and hints!
+![No option selected](./img/no-selection.png)
+
+---
 
 ## 🛠️ Tech Stack
 
 - HTML
 - CSS
 - JavaScript
-- Deployed with [Netlify](https://netlify.com)
-
----
-
-Made for fun and learning.

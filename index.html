@@ -3,40 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Projet 3</title>
+    <title>Mini Projet 4</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>    
     <div class="container">
-        <h1>Select game difficulty:</h1>
-        <select id="difficulty">
-            <option value="Select an option" disabled selected>Select an option</option>
-            <option value="Easy">Easy</option>
-            <option value="Medium">Medium</option>
-            <option value="Hard">Hard</option>
-        </select>
-        <label id="Quest" for="reponse"></label>
         <div class="btn-section">    
-            <h1 ></h1>
-            <input type="number" id="reponse">
-            <button id="Guess-btn">Guess</button>
-            <button id="PlayAgain-btn">Play Again</button>
+            <fieldset>
+                <legend>Type a Tempreture:</legend>
+                <br>
+                <input type="number" id="reponse">
+                <label for="reponse" id="label_rep"></label>
+                <div>
+                  <input type="radio" id="celsius" name="temp" value="celsius"/>
+                  <label for="celsius">Celsius ➔ Fahrenheit</label>
+                </div>
+                <div>
+                  <input type="radio" id="fah" name="temp" value="fah"/>
+                  <label for="fah">Fahrenheit ➔ Celsius</label>
+                </div>
+                <p id="result"></p>
+              </fieldset>
             <br>
         </div>
-        <div class="btn-section">    
-            <p id="getHints">Get some hints</p>
-            <button id="Hint-btn1">1</button>
-            <button id="Hint-btn2">2</button>
-            <button id="Hint-btn3">3</button>
-            <br>
-        </div>
-        <div class="hints">
-            <p id="hint1">Hint 1: </p>
-            <p id="hint2">Hint 2: </p>
-            <p id="hint3">Hint 3: </p>
-        </div>
-        <p id="result"></p>
     </div>    
-    <script type="module" src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
