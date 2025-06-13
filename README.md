@@ -38,3 +38,4 @@ You can also toggle between **Light Mode** and **Dark Mode** using the theme swi
 ## 📸 Screenshot
 
 ![Dice Roller Game Screenshot](./img/image.png)
+![Dice Roller Game Screenshot-dark](./img/image-dark.png)
