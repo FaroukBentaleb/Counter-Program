@@ -1,67 +1,92 @@
-let mode = "w";
-let dices = [];
-let btn = document.getElementById("roll");
-let cont = document.getElementById("cont");
-let legend = document.getElementById("legend");
-let span = document.getElementById("span");
-document.getElementById("imgd").style.display = "none";
-
-//White Mode
-document.getElementById("imgw").onclick = function(){
-    document.getElementById("imgd").style.display = "block";
-    document.getElementById("imgw").style.display = "none";
-    btn.classList.add("btn-white");
-    btn.classList.remove("btn-dark");
-
-    cont.classList.add("container-dark");
-    cont.classList.remove("container");
-
-    legend.classList.add("legend-dark");
-    legend.classList.remove("legend");
-
-    span.classList.add("span-dark");
-    span.classList.remove("span");
-
-    mode = "d";
-    Prepare(dices);
+const operators = ['-','+','*','/','%'];
+function insert(val){
+    document.getElementById("display").value +=val;
 }
-//Dark Mode
-document.getElementById("imgd").onclick = function(){
-    document.getElementById("imgw").style.display = "block";
-    document.getElementById("imgd").style.display = "none";
-    btn.classList.remove("btn-white");
-    btn.classList.add("btn-dark");
+function calculate() {
+    let val = document.getElementById("display").value;
+    try {
+        let valStr = String(val);
+        let tab = [];
+        let j = 0;
+        let i = 0;
 
-    cont.classList.remove("container-dark");
-    cont.classList.add("container");
+        while (i < valStr.length) {
+            if (operators.includes(valStr[i])) {
+                tab[j] = valStr.slice(0, i);
+                tab[j + 1] = valStr[i];
+                valStr = valStr.slice(i + 1);
+                j += 2;
+                i = 0;
+            } else {
+                i++;
+            }
+        }
+        tab[j] = valStr;
 
-    legend.classList.remove("legend-dark");
-    legend.classList.add("legend");
+        let k = 1;
+        while (k < tab.length - 1) {
+            if (tab[k] === '*' || tab[k] === '/' || tab[k] === '%') {
+                let result = calc(tab[k - 1], tab[k], tab[k + 1]);
+                tab.splice(k - 1, 3, result);
+                k = 1;
+            } else {
+                k += 2;
+            }
+        }
 
-    span.classList.remove("span-dark");
-    span.classList.add("span");
-    mode = "w";
-    Prepare(dices);
-}
+        k = 1;
+        while (k < tab.length - 1) {
+            if (tab[k] === '+' || tab[k] === '-') {
+                let result = calc(tab[k - 1], tab[k], tab[k + 1]);
+                tab.splice(k - 1, 3, result);
+                k = 1; 
+            } else {
+                k += 2;
+            }
+        }
 
-document.getElementById("roll").onclick = function(){
-    dices = [];
-    let dice = Number(document.getElementById("reponse").value);
-    for (let i=0; i<dice ; i++){
-        dices[i] = Math.floor(Math.random()*6)+1;
+        document.getElementById("display").value = tab[0];
+    } catch (error) {
+        document.getElementById("error").textContent = "Error";
     }
-    Prepare(dices);
 }
 
-function Prepare(...dices){
-    let dice = Number(document.getElementById("reponse").value);
-    document.getElementById("result").textContent = "";
-    for (let i=0; i<dice ; i++){
-        if(mode === "d"){
-            document.getElementById("result").innerHTML += `<img src="img/`+ dices[0][i] +`.svg" alt="img/`+ dices[0][i] +`.svg" width="70px"style=" background-color: white;">`;
+function backspace(){
+    document.getElementById("display").value = document.getElementById("display").value.slice(0, -1);
+}
+function clearDisplay(){
+    document.getElementById("display").value = "";
+}
+function multipNotFound(...tab){
+    for(let i=0;i<tab.length;i++){
+        if(tab[i] === '*' || tab[i] === '/'){
+            return false;
         }
-        else{
-            document.getElementById("result").innerHTML += `<img src="img/`+ dices[0][i] +`-dark.svg" alt="img/`+ dices[0][i] +`.svg" width="50px">`;
+    }
+    return true;
+}
+function additNotFound(...tab){
+    for(let i=0;i<tab.length;i++){
+        if(tab[i] === '+' || tab[i] === '-'){
+            return false;
         }
+    }
+    return true;
+}
+function calc(prev,oper,next){
+    if(oper === '*'){
+        return Number(prev)*Number(next);
+    }
+    if(oper === '/'){
+        return Number(prev)/Number(next);
+    }
+    if(oper === '+'){
+        return Number(prev)+Number(next);
+    }
+    if(oper === '-'){
+        return Number(prev)-Number(next);
+    }
+    if(oper === '%'){
+        return Number(prev)%Number(next);
     }
 }

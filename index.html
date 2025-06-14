@@ -3,24 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Projet 5</title>
+    <title>Mini Projet 6</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <img id="imgw" src="img/white-mode.png" alt="" width="100px">
-    <img id="imgd" src="img/dark-mode.png" alt="" width="100px  ">
     <div class="container" id="cont">
         <div class="btn-section">
-          <legend class="legend" id="legend">Dice Roller:</legend>
-          <br>
-          <span id="span"># dice(s) </span> 
-          <input type="number" id="reponse">
-          <br>
-          <button id="roll" class="btn-dark">Roll Dice</button>
+            <br>
+            <p id="error" style="color:red;"></p>
+            <input id="display" type="text" readonly />
+            <br>
+            <div class="button-grid">
+                <button class="btn-dark key-btn" onclick="insert('7')">7</button>
+                <button class="btn-dark key-btn" onclick="insert('8')">8</button>
+                <button class="btn-dark key-btn" onclick="insert('9')">9</button>
+                <button class="btn-operator key-btn" onclick="insert('%')">%</button>
 
-          <p id="result"></p>
-          <br>
-        </div>
+                <button class="btn-dark key-btn" onclick="insert('4')">4</button>
+                <button class="btn-dark key-btn" onclick="insert('5')">5</button>
+                <button class="btn-dark key-btn" onclick="insert('6')">6</button>
+                <button class="btn-operator key-btn" onclick="insert('/')">/</button>
+
+                <button class="btn-dark key-btn" onclick="insert('1')">1</button>
+                <button class="btn-dark key-btn" onclick="insert('2')">2</button>
+                <button class="btn-dark key-btn" onclick="insert('3')">3</button>
+                <button class="btn-operator key-btn" onclick="insert('-')">-</button>
+
+                <button class="btn-dark key-btn" onclick="insert('0')">0</button>
+                <button class="btn-dark key-btn" onclick="insert('.')">.</button>
+                <button class="btn-operator key-btn" onclick="insert('*')">*</button>
+                <button class="btn-operator key-btn" onclick="insert('+')">+</button>
+
+                <button class="btn-back key-btn" onclick="backspace()">Back</button>
+                <button class="btn-back key-btn" onclick="clearDisplay()">C</button>
+                <button class="btn-equal key-btn" onclick="calculate()">=</button>
+            </div>
+            <p id="result"></p>
+            <br>
+            </div>
     </div>    
     <script src="index.js"></script>
 </body>
