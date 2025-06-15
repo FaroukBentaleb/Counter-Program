@@ -14,7 +14,6 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  border: 10px black;
 }
 .container-dark {
   max-width: 500px;
@@ -53,13 +52,19 @@ fieldset {
   color: #f9f9f9;
 }
 
-input {
+.span {
   font-size: 0.9rem;
   font-weight: bold;
   padding: 0 10px;
   color: #333;
 }
 
+.span-dark {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0 10px;
+  color: #f9f9f9;
+}
 
 label {
   font-size: 1rem;
@@ -71,63 +76,6 @@ label {
   text-align: left;
   padding-left: 20%;
 }
-.button-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin-top: 20px;
-  justify-items: center;
-}
-.button-grid button {
-  width: 100%;         
-  height: 48px;          
-  box-sizing: border-box;
-  padding: 10px 0;       
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button-grid .btn-dark {
-  width: 100%;
-  box-sizing: border-box;
-}
-.btn-operator {
-  background-color: #4caf50;
-  color: white;
-  border: 1px solid #2e7d32;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.btn-operator:hover {
-  background-color: #388e3c;
-}
-
-.btn-back {
-  background-color: #ff9800;
-  color: white;
-  border: 1px solid #cc7a00;
-}
-
-.btn-back:hover {
-  background-color: #e68a00;
-}
-
-.btn-equal {
-  background-color: #e53935;
-  color: white;
-  border: 1px solid #b71c1c;
-}
-
-.btn-equal:hover {
-  background-color: #c62828;
-}
 
 #result {
   font-size: 1.4rem;
@@ -136,7 +84,7 @@ label {
   margin-top: 20px;
 }
 
-input[type="text"] {
+input[type="number"] {
   width: 200px;
   max-width: 100%;
   padding: 10px;
@@ -148,30 +96,27 @@ input[type="text"] {
 }
 
 .btn-dark {
-  background-color: #222;
+  background-color: #ffffff;
   color: white;
   border: 1px solid #444;
-  padding: 10px 20px;
-  border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
 }
 
 .btn-dark:hover {
-  background-color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
 }
 
-.btn-white {
-  background-color: white;
-  color: #222;
-  border: 1px solid #ccc;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-size: 16px;
+
+
+button{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
   cursor: pointer;
 }
-
-.btn-white:hover {
-  background-color: #f2f2f2;
-}
- 

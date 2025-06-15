@@ -1,27 +1,38 @@
-# JavaScript Calculator 🧮
+# HandCraft
 
-This is a simple calculator built using **HTML**, **CSS**, and **JavaScript**. It supports basic arithmetic operations with custom parsing logic.
+HandCraft is an interactive Rock-Paper-Scissors game where the AI opponent uses Google's Generative Language API (Gemini) to decide its moves dynamically. The game stores past choices locally and offers a smooth, fun experience.
 
-## 🔗 Live Demo
-
-👉 [Try it here](https://calculator-programme.netlify.app/)
+---
 
 ## Features
 
-- Supports addition (`+`), subtraction (`-`), multiplication (`*`), division (`/`), and modulo (`%`)
-- Backspace and clear functionality
-- Clean and responsive UI
+- Player vs AI gameplay with choices: Rock, Paper, Scissors.
+- AI decisions powered by Google Gemini Generative Language API.
+- Persistent game data saved in localStorage.
+- Responsive UI showing player and AI choices with images.
+- Hosted on Netlify for easy access.
 
-## How It Works
+---
 
-- You click buttons to input values.
-- The expression is shown in a read-only input field.
-- When you press `=`, the `calculate()` function parses and evaluates the expression.
-- Follows operator precedence: multiplication/division/modulo first, then addition/subtraction.
+## Demo
 
-## Example Expression
+Check out the live demo here:  
+[https://handclashthegame.netlify.app/](HandClash The Game)
 
-```text
-Input:   12 + 7 * 3
-Output:  33
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js installed (v14+ recommended)
+- Google Cloud account with access to Generative Language API (Gemini)
+- API key for the Gemini model
+
+### Installation
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/FaroukBentaleb/handcraft.git
 ```

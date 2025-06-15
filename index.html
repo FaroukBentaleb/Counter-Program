@@ -3,45 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Projet 6</title>
+    <title>Mini Projet 7</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="container" id="cont">
+        <h1>HandClash</h1>
         <div class="btn-section">
+            <legend class="legend" id="legend">Rock paper scissor it:</legend>
             <br>
-            <p id="error" style="color:red;"></p>
-            <input id="display" type="text" readonly />
-            <br>
-            <div class="button-grid">
-                <button class="btn-dark key-btn" onclick="insert('7')">7</button>
-                <button class="btn-dark key-btn" onclick="insert('8')">8</button>
-                <button class="btn-dark key-btn" onclick="insert('9')">9</button>
-                <button class="btn-operator key-btn" onclick="insert('%')">%</button>
-
-                <button class="btn-dark key-btn" onclick="insert('4')">4</button>
-                <button class="btn-dark key-btn" onclick="insert('5')">5</button>
-                <button class="btn-dark key-btn" onclick="insert('6')">6</button>
-                <button class="btn-operator key-btn" onclick="insert('/')">/</button>
-
-                <button class="btn-dark key-btn" onclick="insert('1')">1</button>
-                <button class="btn-dark key-btn" onclick="insert('2')">2</button>
-                <button class="btn-dark key-btn" onclick="insert('3')">3</button>
-                <button class="btn-operator key-btn" onclick="insert('-')">-</button>
-
-                <button class="btn-dark key-btn" onclick="insert('0')">0</button>
-                <button class="btn-dark key-btn" onclick="insert('.')">.</button>
-                <button class="btn-operator key-btn" onclick="insert('*')">*</button>
-                <button class="btn-operator key-btn" onclick="insert('+')">+</button>
-
-                <button class="btn-back key-btn" onclick="backspace()">Back</button>
-                <button class="btn-back key-btn" onclick="clearDisplay()">C</button>
-                <button class="btn-equal key-btn" onclick="calculate()">=</button>
-            </div>
+            <button id="btn-rock" class="btn-dark" style="background-image: url('img/rock.png');"></button>
+            <button id="btn-paper" class="btn-dark" style="background-image: url('img/paper.png');"></button>
+            <button id="btn-scissors" class="btn-dark" style="background-image: url('img/scissors.png');"></button>
+            <p>Player Choice:</p>
+            <p id="player"></p>
+            <p>AI Choice:</p>
+            <p id="AI"></p>
             <p id="result"></p>
-            <br>
-            </div>
+          <br>
+        </div>
     </div>    
-    <script src="index.js"></script>
+    <script src="src/index.js" type="module" defer></script>
 </body>
 </html>
