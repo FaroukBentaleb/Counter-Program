@@ -17,7 +17,7 @@ HandCraft is an interactive Rock-Paper-Scissors game where the AI opponent uses 
 ## Demo
 
 Check out the live demo here:  
-[https://handclashthegame.netlify.app/](HandClash)
+[HandClash](https://handclashthegame.netlify.app/)
 
 ---
 
